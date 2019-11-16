@@ -2,7 +2,7 @@
 
 var Poisson = require('./');
 var PNG = require('pngjs-nozlib').PNG;
-Noise = require('noisejs').Noise;
+const { Noise } = require('noisejs');
 
 var noise = new Noise();
 

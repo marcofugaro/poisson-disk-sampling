@@ -84,7 +84,7 @@ var PoissonDiskSampling = function PoissonDiskSampling (shape, minDistance, maxD
     this.maxTries = maxTries || 30;
     this.rng = rng || Math.random;
 
-    this.distanceFunction = distanceFunction;
+    this.distanceFunction = distanceFunction || (n => n);
 
     this.neighbourhood = getNeighbourhood(this.dimension);
 
